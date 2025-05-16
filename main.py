@@ -27,7 +27,7 @@ def main(page: Page):
                                 coordinates=map.MapLatitudeLongitude(50.5, 30.5),
                                 color=Colors.BLUE,
                                 border_color=Colors.RED,
-                                border_stroke_width=5,
+                                border_stroke_width=6,
                             )
                         ]
                     ),
