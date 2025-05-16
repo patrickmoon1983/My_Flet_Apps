@@ -23,7 +23,7 @@ def main(page: Page):
                     map.CircleLayer(
                         circles=[
                             map.CircleMarker(
-                                radius=20,
+                                radius=10,
                                 coordinates=map.MapLatitudeLongitude(50.5, 30.5),
                                 color=Colors.BLUE,
                                 border_color=Colors.RED,
