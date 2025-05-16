@@ -20,17 +20,17 @@ def main(page: Page):
             on_init=lambda e: print('Map Init'),
             on_tap=handle_tap,
             layers=[map.TileLayer(url_template='https://tile.openstreetmap.org/{z}/{x}/{y}.png'),
-                    # map.CircleLayer(
-                    #     circles=[
-                    #         map.CircleMarker(
-                    #             radius=20,
-                    #             coordinates=map.MapLatitudeLongitude(50.5, 30.5),
-                    #             color=Colors.BLUE,
-                    #             border_color=Colors.RED,
-                    #             border_stroke_width=5,
-                    #         )
-                    #     ]
-                    # ),
+                    map.CircleLayer(
+                        circles=[
+                            map.CircleMarker(
+                                radius=20,
+                                coordinates=map.MapLatitudeLongitude(50.5, 30.5),
+                                color=Colors.BLUE,
+                                border_color=Colors.RED,
+                                border_stroke_width=5,
+                            )
+                        ]
+                    ),
                     # map.PolygonLayer(
                     #     polygons=[
                     #         map.PolygonMarker(
