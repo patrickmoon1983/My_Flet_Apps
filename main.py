@@ -87,9 +87,9 @@ def main(page: Page):
         ),
         Row(
             [
-                OutlinedButton(text='Rotate 90°',
+                OutlinedButton(text='Rotate 90Â°',
                                on_click=lambda e: m.rotate_from(90, AnimationCurve.EASE_IN)),
-                OutlinedButton(text='Rotate -90°',
+                OutlinedButton(text='Rotate -90Â°',
                                on_click=lambda e: m.rotate_from(-90, AnimationCurve.EASE_OUT)),
                 OutlinedButton(text='My Home',
                                on_click=lambda e: m.move_to(
@@ -124,4 +124,4 @@ def main(page: Page):
 
 
 if __name__ == '__main__':
-    flet.app(target=main)  #view=AppView.WEB_BROWSER
+    flet.app(target=main, view=AppView.WEB_BROWSER)
